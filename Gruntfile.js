@@ -65,6 +65,11 @@ module.exports = function(grunt) {
                 }
             }
         },
+        clean: {
+            intermediary: {
+                src: ['<%= requirejs.compile.options.out %>']
+            }
+        },
         watch: {
             js: {
                 files: ['<%= jshint.files %>', 'scripts/build/wrap-*.js'],
@@ -74,7 +79,7 @@ module.exports = function(grunt) {
                 files: ['styles/src/*.less', 'styles/lib/*.less'],
                 tasks: ['styles']
             }
-        }
+        },
     });
 
     grunt.loadNpmTasks('grunt-contrib-jshint');
@@ -83,9 +88,10 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-requirejs');
     grunt.loadNpmTasks('grunt-regex-replace');
     grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-contrib-clean');
 
     grunt.registerTask('scripts', ['jshint', 'requirejs', 'regex-replace',
-        'concat']);
+        'concat', 'clean:intermediary']);
     grunt.registerTask('styles', ['less']);
     grunt.registerTask('default', ['scripts', 'styles']);
 
