@@ -1,0 +1,26 @@
+{
+    "name": "skinmenu",
+    "version": "0.1.0",
+    "description": "",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/MonoVertex/skinmenu.git"
+    },
+    "author": "Cosmin Stamate (cos.stamate@yahoo.com)",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/MonoVertex/skinmenu/issues"
+    },
+    "devDependencies": {
+        "http-server": "~0.6.1",
+        "less": "~1.7.0",
+        "requirejs": "~2.1.11",
+        "grunt": "~0.4.5",
+        "grunt-contrib-jshint": "~0.10.0",
+        "grunt-contrib-watch": "~0.6.1",
+        "grunt-contrib-less": "~0.11.0",
+        "grunt-contrib-requirejs": "~0.4.4",
+        "grunt-regex-replace": "~0.2.6",
+        "grunt-contrib-concat": "~0.4.0"
+    }
+}

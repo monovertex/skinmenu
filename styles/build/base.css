@@ -1,0 +1,55 @@
+/* Reset any previous styling. */
+.skinmenu-select,
+.skinmenu-select div,
+.skinmenu-select button,
+.skinmenu-select span,
+.skinmenu-select ul,
+.skinmenu-select li {
+  margin: 0px;
+  padding: 0px;
+  width: auto;
+  height: auto;
+  border: 0px solid #fff;
+  background: none;
+  font-size: 1.0em;
+  position: static;
+  line-height: initial;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.skinmenu-invisible {
+  position: absolute;
+  left: -10000px;
+  margin-left: -10000px;
+  opacity: 0;
+}
+.skinmenu-select {
+  position: relative;
+}
+.skinmenu-select .skinmenu-button {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 5001;
+}
+.skinmenu-select .skinmenu-menu-container {
+  position: absolute;
+  top: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 5000;
+  display: none;
+}
+.skinmenu-select .skinmenu-menu-container .skinmenu-menu {
+  width: 100%;
+  height: 100%;
+  list-style-type: none;
+}
+.skinmenu-select .skinmenu-menu-container .skinmenu-menu .skinmenu-option {
+  width: 100%;
+}
+.skinmenu-select.skinmenu-open .skinmenu-menu-container {
+  display: block;
+}

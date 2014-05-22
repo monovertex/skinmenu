@@ -1,0 +1,65 @@
+@import '../lib/lesshat.less';
+
+/* Reset any previous styling. */
+.skinmenu-select,
+.skinmenu-select div,
+.skinmenu-select button,
+.skinmenu-select span,
+.skinmenu-select ul,
+.skinmenu-select li {
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+    height: auto;
+    border: 0px solid #fff;
+    background: none;
+    font-size: 1.0em;
+    position: static;
+    line-height: initial;
+
+    .user-select(none);
+}
+
+.skinmenu-invisible {
+    position: absolute;
+    left: -10000px;
+    margin-left: -10000px;
+    opacity: 0;
+}
+
+.skinmenu-select {
+    @z-index: 5000;
+    position: relative;
+
+    .skinmenu-button {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: (@z-index + 1);
+    }
+
+    .skinmenu-menu-container {
+        position: absolute;
+        top: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        z-index: @z-index;
+        display: none;
+
+        .skinmenu-menu {
+            width: 100%;
+            height: 100%;
+            list-style-type: none;
+
+            .skinmenu-option {
+                width: 100%;
+            }
+        }
+    }
+
+    &.skinmenu-open {
+        .skinmenu-menu-container {
+            display: block;
+        }
+    }
+}

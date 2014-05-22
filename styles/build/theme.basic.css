@@ -1,0 +1,118 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,600);
+.skinmenu-select {
+  width: 150px;
+  height: 30px;
+  font-family: 'Open Sans', sans-serif;
+}
+.skinmenu-select .skinmenu-button {
+  border: 1px solid #cccccc;
+  background-color: #cccccc;
+  color: #666666;
+  font-size: 0.8em;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 3px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 3px;
+  -moz-background-clip: padding;
+  border-radius: 3px;
+  background-clip: padding-box;
+  -webkit-transition-property: border-color, text-shadow;
+  -moz-transition-property: border-color, text-shadow;
+  -o-transition-property: border-color, text-shadow;
+  transition-property: border-color, text-shadow;
+  -webkit-transition-duration: 0.6s;
+  -moz-transition-duration: 0.6s;
+  -o-transition-duration: 0.6s;
+  transition-duration: 0.6s;
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.skinmenu-select .skinmenu-button .skinmenu-button-label {
+  height: 100%;
+  line-height: 30px;
+  margin-right: 20px;
+  padding: 0 0 0 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.skinmenu-select .skinmenu-button .skinmenu-button-arrow {
+  width: 20px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.skinmenu-select .skinmenu-button .skinmenu-button-arrow:before {
+  content: "\25BC";
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 30px;
+  text-align: center;
+}
+.skinmenu-select .skinmenu-menu-container {
+  background-color: #eeeeee;
+  border: 1px solid #e1e1e1;
+  left: 5px;
+  margin-top: -1px;
+  -webkit-border-radius: 0px 3px 3px 3px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 0px 3px 3px 3px;
+  -moz-background-clip: padding;
+  border-radius: 0px 3px 3px 3px;
+  background-clip: padding-box;
+}
+.skinmenu-select .skinmenu-menu-container .skinmenu-menu .skinmenu-option {
+  cursor: pointer;
+  color: #888888;
+  padding: 2px 0 2px 4px;
+  font-size: 0.8em;
+  -webkit-transition-property: background-color;
+  -moz-transition-property: background-color;
+  -o-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 0.6s;
+  -moz-transition-duration: 0.6s;
+  -o-transition-duration: 0.6s;
+  transition-duration: 0.6s;
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.skinmenu-select .skinmenu-menu-container .skinmenu-menu .skinmenu-option:hover,
+.skinmenu-select .skinmenu-menu-container .skinmenu-menu .skinmenu-option.active {
+  background-color: #e1e1e1;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.skinmenu-select:hover .skinmenu-button {
+  border-color: #b3b3b3;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-in;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
